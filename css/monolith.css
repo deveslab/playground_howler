@@ -1,0 +1,58 @@
+body{
+    height: 100vh;
+    width: 100vw;
+    margin:0;
+}
+.monolith{
+    display: flex;
+    position: relative;
+    width: 100%;
+    background:linear-gradient(90deg, rgb(59, 11, 32) 0%,
+     rgb(1, 16, 33) 100%);
+    margin: auto;
+    justify-content: center;
+    height: 100%;
+    
+    
+}
+.monolith__sphere{
+    width: 10rem;
+    height: 10rem;
+    position: absolute;
+    top: 0;
+    margin: auto;
+    bottom: 0;
+    border-radius: 9999px;
+    background:  url(/res/abs2.gif);
+    background-size: cover;
+    filter:blur(1px) contrast(1);
+    animation-name: transform;
+    animation-duration: 25s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    box-shadow: inset 10px 0 40px #f7f8fc, 
+    inset -10px 0 20px #f7e1ef, 
+    inset -40px 10px 100px #fdfcff,
+    0 5px 30px rgba(238, 172, 230, 0.3);
+    transition: 0.5s ease;
+}
+span.monolith__sphere--tap{
+    transform: scale(1.1);
+    background-size: cover;
+    filter:blur(2px) contrast(3);
+   
+}
+
+
+
+@keyframes transform
+{
+    0%,
+  100% { border-radius: 63% 37% 54% 46% / 55% 48% 52% 45%; } 
+   14% { border-radius: 40% 60% 54% 46% / 49% 60% 40% 51%; } 
+   28% { border-radius: 54% 46% 38% 62% / 49% 70% 30% 51%; } 
+   42% { border-radius: 61% 39% 55% 45% / 61% 38% 62% 39%; } 
+   56% { border-radius: 61% 39% 67% 33% / 70% 50% 50% 30%; } 
+   70% { border-radius: 50% 50% 34% 66% / 56% 68% 32% 44%; } 
+   84% { border-radius: 46% 54% 50% 50% / 35% 61% 39% 65%; } 
+}
