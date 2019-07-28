@@ -7,13 +7,12 @@ body{
     display: flex;
     position: relative;
     width: 100%;
-    background:linear-gradient(90deg, rgb(59, 11, 32) 0%,
-     rgb(1, 16, 33) 100%);
+    background: linear-gradient(90deg, rgb(0, 0, 0) 0%,       rgb(0, 0, 0) 100%);
     margin: auto;
+    background: ghostwhite;
     justify-content: center;
     height: 100%;
-    
-    
+    overflow: hidden;
 }
 .monolith__sphere{
     width: 10rem;
@@ -21,25 +20,29 @@ body{
     position: absolute;
     top: 0;
     margin: auto;
+    border-color: white;
     bottom: 0;
     border-radius: 9999px;
     background:  url(/res/abs2.gif);
     background-size: cover;
-    filter:blur(1px) contrast(1);
+    /* filter:blur(1px) contrast(1); */
     animation-name: transform;
     animation-duration: 25s;
     animation-iteration-count: infinite;
     animation-timing-function: ease-in-out;
-    box-shadow: inset 10px 0 40px #f7f8fc, 
-    inset -10px 0 20px #f7e1ef, 
-    inset -40px 10px 100px #fdfcff,
-    0 5px 30px rgba(238, 172, 230, 0.3);
-    transition: 0.5s ease;
+    box-shadow: inset 10px 0 40px #ea4fff75, inset -10px 0 20px #ffffff, inset -40px 10px 100px #e0eeff, 0 5px 30px rgba(255, 57, 253, 0.3);
+    transition:  0.5s ease;
+    will-change: transform;
 }
 span.monolith__sphere--tap{
     transform: scale(1.1);
     background-size: cover;
     filter:blur(2px) contrast(3);
+   
+}
+span.monolith__sphere:hover{
+    transform: scale(1.1);
+    
    
 }
 
