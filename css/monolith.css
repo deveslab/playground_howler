@@ -9,7 +9,7 @@ body{
     width: 100%;
     background: linear-gradient(90deg, rgb(0, 0, 0) 0%,       rgb(0, 0, 0) 100%);
     margin: auto;
-    background: ghostwhite;
+    background: #181837;
     justify-content: center;
     height: 100%;
     overflow: hidden;
@@ -31,8 +31,8 @@ body{
     animation-iteration-count: infinite;
     animation-timing-function: ease-in-out;
     box-shadow: inset 10px 0 40px #ea4fff75, inset -10px 0 20px #ffffff, inset -40px 10px 100px #e0eeff, 0 5px 30px rgba(255, 57, 253, 0.3);
-    transition:  0.5s ease;
-    will-change: transform;
+    transition: all 400ms ease;
+    will-change: auto;
 }
 span.monolith__sphere--tap{
     transform: scale(1.1);

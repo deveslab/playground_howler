@@ -33,7 +33,7 @@ var sound = new Howl({
 
     setTimeout(function(){
       monolith_sphere.classList.remove("monolith__sphere--tap");
-    }, 500);
+    }, 400);
     
   }
   monolith_sphere.addEventListener("click", function(){
