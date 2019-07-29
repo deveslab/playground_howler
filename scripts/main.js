@@ -27,7 +27,6 @@ var sound = new Howl({
     monolith_sphere.style.background="url('/res/abs"+d+".gif')";
     monolith_sphere.style.backgroundSize="cover";
     
-
     monolith_sphere.classList.add("monolith__sphere--tap");
     
 
@@ -40,8 +39,6 @@ var sound = new Howl({
     toggleDream();
     console.log("clicked");
     toggle.play('laser2');
-    
- 
   });
 
   

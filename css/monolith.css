@@ -30,22 +30,34 @@ body{
     animation-duration: 25s;
     animation-iteration-count: infinite;
     animation-timing-function: ease-in-out;
-    box-shadow: inset 10px 0 40px #ea4fff75, inset -10px 0 20px #ffffff, inset -40px 10px 100px #e0eeff, 0 5px 30px rgba(255, 57, 253, 0.3);
+    box-shadow: inset 10px 0 40px #ea4fff75, inset -10px 0 20px #ffffff, inset -40px 10px 100px #e0eeff, 0 5px 30px rgba(255, 57, 253, 0.4);
     transition: all 400ms ease;
     will-change: auto;
+    z-index: 1;
 }
 span.monolith__sphere--tap{
-    transform: scale(1.1);
+    transform: scale(1.2);
     background-size: cover;
     filter:blur(2px) contrast(3);
    
 }
 span.monolith__sphere:hover{
     transform: scale(1.1);
-    
-   
+    box-shadow: inset 10px 0 40px #ea4fffb0, inset -10px 0 20px #ffffff, inset -40px 10px 100px #c9e1ff, 0 5px 40px rgba(241, 120, 215, 0.52);
 }
 
+#monolith__dream{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    z-index: 0;
+    opacity: 0.3;
+    filter: invert(1);
+    mix-blend-mode: color-dodge;
+  }
+  
 
 
 @keyframes transform
