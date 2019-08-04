@@ -1,3 +1,6 @@
+*{
+    will-change: auto;
+}
 body{
     height: 100vh;
     width: 100vw;
@@ -31,8 +34,7 @@ body{
     animation-iteration-count: infinite;
     animation-timing-function: ease-in-out;
     box-shadow: inset 10px 0 40px #ea4fff75, inset -10px 0 20px #ffffff, inset -40px 10px 100px #e0eeff, 0 5px 30px rgba(255, 57, 253, 0.4);
-    transition: all 400ms ease;
-    will-change: auto;
+    transition: all 400ms ease;;
     z-index: 1;
 }
 span.monolith__sphere--tap{
